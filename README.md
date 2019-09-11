@@ -12,7 +12,7 @@ PHPUnit extension with assert methods for directories
 Install through composer
 
 ```bash
-composer require spawnia/phpunit-assert-directory
+composer require --dev spawnia/phpunit-assert-directory
 ```
 
 ## Usage
