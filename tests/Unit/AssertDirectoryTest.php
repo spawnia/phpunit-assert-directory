@@ -39,7 +39,7 @@ class AssertDirectoryTest extends Framework\TestCase
         $base = __DIR__.'/../fixtures/'.$name;
         self::assertDirectoryEquals(
             $base.'/expected',
-            $base.'/actual',
+            $base.'/actual'
         );
     }
 }
