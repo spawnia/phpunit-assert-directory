@@ -36,10 +36,10 @@ class AssertDirectoryTest extends Framework\TestCase
 
     protected static function compareFixture(string $name): void
     {
-        $base = __DIR__.'/../fixtures/' . $name;
+        $base = __DIR__.'/../fixtures/'.$name;
         self::assertDirectoryEquals(
-            $base . '/expected',
-            $base . '/actual',
+            $base.'/expected',
+            $base.'/actual',
         );
     }
 }

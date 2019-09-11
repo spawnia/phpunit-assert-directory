@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Spawnia\PHPUnitAssertFiles;
 
 use PHPUnit\Framework\Assert;
@@ -28,7 +30,7 @@ trait AssertDirectory
             $pathname = $info->getPathname();
             self::assertFileEquals(
                 $pathname,
-                $actual . explode($expected, $pathname, 2)[1]
+                $actual.explode($expected, $pathname, 2)[1]
             );
         }
     }
