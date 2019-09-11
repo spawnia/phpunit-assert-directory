@@ -17,7 +17,23 @@ composer require spawnia/phpunit-assert-directory
 
 ## Usage
 
-:bulb: This is a great place for showing a few usage examples!
+Use the trait `AssertDirectory` in your test method.
+
+```diff
+<?php
+
+declare(strict_types=1);
+
+namespace Foo\Tests;
+
+use PHPUnit\Framework;
++use Spawnia\PHPUnitAssertFiles\AssertDirectory;
+
+class FooTest extends Framework\TestCase
+{
++   use AssertDirectory;
+}
+```
 
 ## Changelog
 
