@@ -1,18 +1,18 @@
-# php-library-template
+# phpunit-assert-files
 
-[![CI Status](https://github.com/spawnia/php-library-template/workflows/Continuous%20Integration/badge.svg)](https://github.com/spawnia/php-library-template/actions)
-[![codecov](https://codecov.io/gh/spawnia/php-library-template/branch/master/graph/badge.svg)](https://codecov.io/gh/spawnia/php-library-template)
-[![Latest Stable Version](https://poser.pugx.org/spawnia/php-library-template/v/stable)](https://packagist.org/packages/spawnia/php-library-template)
-[![Total Downloads](https://poser.pugx.org/spawnia/php-library-template/downloads)](https://packagist.org/packages/spawnia/php-library-template)
+[![CI Status](https://github.com/spawnia/phpunit-assert-files/workflows/Continuous%20Integration/badge.svg)](https://github.com/spawnia/phpunit-assert-files/actions)
+[![codecov](https://codecov.io/gh/spawnia/phpunit-assert-files/branch/master/graph/badge.svg)](https://codecov.io/gh/spawnia/phpunit-assert-files)
+[![Latest Stable Version](https://poser.pugx.org/spawnia/phpunit-assert-files/v/stable)](https://packagist.org/packages/spawnia/phpunit-assert-files)
+[![Total Downloads](https://poser.pugx.org/spawnia/phpunit-assert-files/downloads)](https://packagist.org/packages/spawnia/phpunit-assert-files)
 
-A template for starting a PHP library
+PHPUnit extension with assert methods for files and directories
 
 ## Installation
 
 Install through composer
 
 ```bash
-composer require spawnia/php-library-template
+composer require spawnia/phpunit-assert-files
 ```
 
 ## Usage

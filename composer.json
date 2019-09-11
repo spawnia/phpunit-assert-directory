@@ -1,8 +1,8 @@
 {
-  "name": "spawnia/php-library-template",
+  "name": "spawnia/phpunit-assert-files",
   "type": "library",
-  "description": "A template for starting a PHP library",
-  "homepage": "https://github.com/spawnia/php-library-template",
+  "description": "PHPUnit extension with assert methods for files and directories",
+  "homepage": "https://github.com/spawnia/phpunit-assert-files",
   "license": "MIT",
   "authors": [
     {
@@ -33,16 +33,16 @@
   },
   "autoload": {
     "psr-4": {
-      "Spawnia\\Library\\": "src/"
+      "Spawnia\\PHPUnitAssertFiles\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Spawnia\\Library\\Tests\\": "tests/"
+      "Spawnia\\PHPUnitAssertFiles\\Tests\\": "tests/"
     }
   },
   "support": {
-    "issues": "https://github.com/spawnia/php-library-template/issues",
-    "source": "https://github.com/spawnia/php-library-template"
+    "issues": "https://github.com/spawnia/phpunit-assert-files/issues",
+    "source": "https://github.com/spawnia/phpunit-assert-files"
   }
 }
