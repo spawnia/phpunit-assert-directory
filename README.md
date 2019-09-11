@@ -35,6 +35,24 @@ class FooTest extends Framework\TestCase
 }
 ```
 
+You can then proceed the use the additional assertions just like you would
+use PHPUnit's built-in methods, such as `assertSame`.
+
+### assertDirectoryEquals
+
+```php
+/**
+ * Assert that two directories contain the same files with the same contents.
+ *
+ * @param  string  $expected Path to the expected directory
+ * @param  string  $actual Path to the actual directory
+ * @param  string  $message Optional error message in case of failure
+ *
+ * @throws ExpectationFailedException
+ */
+public static function assertDirectoryEquals(string $expected, string $actual, string $message = '')
+```
+
 ## Changelog
 
 Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
