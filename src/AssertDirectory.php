@@ -15,10 +15,11 @@ trait AssertDirectory
      * @param  string  $expected Path to the expected directory
      * @param  string  $actual Path to the actual directory
      * @param  string  $message Optional error message in case of failure
+     * @return void
      *
      * @throws ExpectationFailedException
      */
-    public static function assertDirectoryEquals(string $expected, string $actual, string $message = '')
+    public static function assertDirectoryEquals(string $expected, string $actual, string $message = ''): void
     {
         Assert::assertDirectoryExists($expected, $message);
         Assert::assertDirectoryExists($actual, $message);
