@@ -26,10 +26,10 @@ trait AssertDirectory
 
         $directory = new \RecursiveDirectoryIterator($expected);
         $iterator = new \RecursiveIteratorIterator($directory);
-        /** @var \SplFileInfo $info */
-        foreach ($iterator as $info) {
-            $pathname = $info->getPathname();
-            self::assertFileEquals(
+        /** @var \SplFileInfo $fileInfo */
+        foreach ($iterator as $fileInfo) {
+            $pathname = $fileInfo->getPathname();
+            Assert::assertFileEquals(
                 $pathname,
                 $actual.explode($expected, $pathname, 2)[1]
             );
