@@ -1,8 +1,8 @@
 {
-  "name": "spawnia/phpunit-assert-files",
+  "name": "spawnia/phpunit-assert-directory",
   "type": "library",
-  "description": "PHPUnit extension with assert methods for files and directories",
-  "homepage": "https://github.com/spawnia/phpunit-assert-files",
+  "description": "PHPUnit extension with assert methods for directories",
+  "homepage": "https://github.com/spawnia/phpunit-assert-directory",
   "license": "MIT",
   "authors": [
     {
@@ -42,7 +42,7 @@
     }
   },
   "support": {
-    "issues": "https://github.com/spawnia/phpunit-assert-files/issues",
-    "source": "https://github.com/spawnia/phpunit-assert-files"
+    "issues": "https://github.com/spawnia/phpunit-assert-directory/issues",
+    "source": "https://github.com/spawnia/phpunit-assert-directory"
   }
 }

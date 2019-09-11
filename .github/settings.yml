@@ -43,11 +43,11 @@ repository:
   allow_rebase_merge: false
   allow_squash_merge: false
   default_branch: master
-  description: "PHPUnit extension with assert methods for files and directories"
+  description: "PHPUnit extension with assert methods for directories"
   has_downloads: true
   has_issues: true
   has_pages: false
   has_projects: false
   has_wiki: false
-  name: phpunit-assert-files
+  name: phpunit-assert-directory
   private: false

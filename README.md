@@ -1,18 +1,18 @@
-# phpunit-assert-files
+# phpunit-assert-directory
 
-[![CI Status](https://github.com/spawnia/phpunit-assert-files/workflows/Continuous%20Integration/badge.svg)](https://github.com/spawnia/phpunit-assert-files/actions)
-[![codecov](https://codecov.io/gh/spawnia/phpunit-assert-files/branch/master/graph/badge.svg)](https://codecov.io/gh/spawnia/phpunit-assert-files)
-[![Latest Stable Version](https://poser.pugx.org/spawnia/phpunit-assert-files/v/stable)](https://packagist.org/packages/spawnia/phpunit-assert-files)
-[![Total Downloads](https://poser.pugx.org/spawnia/phpunit-assert-files/downloads)](https://packagist.org/packages/spawnia/phpunit-assert-files)
+[![CI Status](https://github.com/spawnia/phpunit-assert-directory/workflows/Continuous%20Integration/badge.svg)](https://github.com/spawnia/phpunit-assert-directory/actions)
+[![codecov](https://codecov.io/gh/spawnia/phpunit-assert-directory/branch/master/graph/badge.svg)](https://codecov.io/gh/spawnia/phpunit-assert-directory)
+[![Latest Stable Version](https://poser.pugx.org/spawnia/phpunit-assert-directory/v/stable)](https://packagist.org/packages/spawnia/phpunit-assert-directory)
+[![Total Downloads](https://poser.pugx.org/spawnia/phpunit-assert-directory/downloads)](https://packagist.org/packages/spawnia/phpunit-assert-directory)
 
-PHPUnit extension with assert methods for files and directories
+PHPUnit extension with assert methods for directories
 
 ## Installation
 
 Install through composer
 
 ```bash
-composer require spawnia/phpunit-assert-files
+composer require spawnia/phpunit-assert-directory
 ```
 
 ## Usage
