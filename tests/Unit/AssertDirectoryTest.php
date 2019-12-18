@@ -20,24 +20,45 @@ class AssertDirectoryTest extends Framework\TestCase
     public function testThrowsIfDirectoryFilesAreDifferent(): void
     {
         $this->expectException(Framework\ExpectationFailedException::class);
-        self::compareFixture('differentFiles');
+        self::compareFixtureEquals('differentFiles');
     }
 
     public function testThrowsIfDirectoryContentsAreDifferent(): void
     {
         $this->expectException(Framework\ExpectationFailedException::class);
-        self::compareFixture('differentContents');
+        self::compareFixtureEquals('differentContents');
+    }
+
+    public function testThrowsIfSecondDirHasMore(): void
+    {
+        $this->expectException(Framework\ExpectationFailedException::class);
+        self::compareFixtureEquals('secondDirHasMore');
+    }
+
+    public function testDirectoryContainsAllowsExtraFiles(): void
+    {
+        self::compareFixtureContains('secondDirHasMore');
     }
 
     public function testEquals(): void
     {
-        self::compareFixture('equal');
+        self::compareFixtureEquals('equal');
+        self::compareFixtureContains('equal');
     }
 
-    protected static function compareFixture(string $name): void
+    protected static function compareFixtureEquals(string $name): void
     {
         $base = __DIR__.'/../fixtures/'.$name;
         self::assertDirectoryEquals(
+            $base.'/expected',
+            $base.'/actual'
+        );
+    }
+
+    protected static function compareFixtureContains(string $name): void
+    {
+        $base = __DIR__.'/../fixtures/'.$name;
+        self::assertDirectoryContains(
             $base.'/expected',
             $base.'/actual'
         );

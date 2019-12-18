@@ -51,7 +51,23 @@ use PHPUnit's built-in methods, such as `assertSame`.
  *
  * @throws ExpectationFailedException
  */
-public static function assertDirectoryEquals(string $expected, string $actual, string $message = '')
+public static function assertDirectoryEquals(string $expected, string $actual, string $message = ''): void
+```
+
+### assertDirectoryContains
+
+```php
+/**
+ * Assert a directory contains at least the same files as another directory.
+ *
+ * @param  string  $expected Path to the expected directory
+ * @param  string  $actual Path to the actual directory
+ * @param  string  $message Optional error message in case of failure
+ * @return void
+ *
+ * @throws ExpectationFailedException
+ */
+public static function assertDirectoryContains(string $expected, string $actual, string $message = ''): void
 ```
 
 ## Changelog
