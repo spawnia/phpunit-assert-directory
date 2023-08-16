@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5df23e27b5e2e6cbd80cb047f52741ff",
+    "content-hash": "2c3f7c2af4b43d49b2ef6d98604939b0",
     "packages": [
         {
             "name": "thecodingmachine/safe",
