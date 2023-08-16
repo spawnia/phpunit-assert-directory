@@ -60,6 +60,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
+      fail-fast: false
       matrix:
         php-version:
           - "7.3"
@@ -76,6 +77,13 @@ jobs:
             arg: "--prefer-lowest --prefer-stable"
           - name: highest
             arg: "" # No args added as highest is default
+        exclude:
+          - php-version: "7.3"
+            phpunit-version: "^10"
+          - php-version: "7.4"
+            phpunit-version: "^10"
+          - php-version: "8.0"
+            phpunit-version: "^10"
 
     steps:
       - uses: actions/checkout@master
