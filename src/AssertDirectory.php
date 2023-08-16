@@ -12,7 +12,7 @@ trait AssertDirectory
     /**
      * Assert that two directories contain the same files with the same contents.
      *
-     * @param non-empty-string $expected Path to the expected directory
+     * @param string $expected Path to the expected directory
      * @param string $actual Path to the actual directory
      * @param string $message Optional error message in case of failure
      * @return void
@@ -31,7 +31,7 @@ trait AssertDirectory
     /**
      * Assert a directory contains at least the same files as another directory.
      *
-     * @param non-empty-string $expected Path to the expected directory
+     * @param string $expected Path to the expected directory
      * @param string $actual Path to the actual directory
      * @param string $message Optional error message in case of failure
      * @return void
