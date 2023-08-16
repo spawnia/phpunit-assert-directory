@@ -6,7 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## Unreleased
 
-- Allow `php` version `8.0`, `8.1` and `8.2`
+## v2.1.0
+
+### Added
+
+- Support PHP 8
+- Support `thecodingmachine/safe` version `^2`
 
 ## v2.0.0
 

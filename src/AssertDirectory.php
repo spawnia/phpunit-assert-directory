@@ -12,9 +12,9 @@ trait AssertDirectory
     /**
      * Assert that two directories contain the same files with the same contents.
      *
-     * @param  string  $expected Path to the expected directory
-     * @param  string  $actual Path to the actual directory
-     * @param  string  $message Optional error message in case of failure
+     * @param string $expected Path to the expected directory
+     * @param string $actual Path to the actual directory
+     * @param string $message Optional error message in case of failure
      * @return void
      *
      * @throws ExpectationFailedException
@@ -31,9 +31,9 @@ trait AssertDirectory
     /**
      * Assert a directory contains at least the same files as another directory.
      *
-     * @param  string  $expected Path to the expected directory
-     * @param  string  $actual Path to the actual directory
-     * @param  string  $message Optional error message in case of failure
+     * @param string $expected Path to the expected directory
+     * @param string $actual Path to the actual directory
+     * @param string $message Optional error message in case of failure
      * @return void
      *
      * @throws ExpectationFailedException
@@ -48,6 +48,8 @@ trait AssertDirectory
 
     private static function assertDirectoryContainsContents(string $expected, string $actual, string $message): void
     {
+        Assert::assertNotEmpty($expected, $message);
+
         $directory = new \RecursiveDirectoryIterator($expected);
         $iterator = new \RecursiveIteratorIterator($directory);
 
@@ -59,11 +61,7 @@ trait AssertDirectory
             if ($fileInfo->isDir()) {
                 Assert::assertDirectoryExists($actualPathname, $message);
             } else {
-                Assert::assertFileEquals(
-                    $expectedPathname,
-                    $actualPathname,
-                    $message
-                );
+                Assert::assertFileEquals($expectedPathname, $actualPathname, $message);
             }
         }
     }
