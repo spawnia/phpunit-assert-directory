@@ -1,4 +1,4 @@
-.PHONY: coverage cs help it stan test
+.PHONY: cs help it stan test
 
 it: stan test ## Runs the cs, stan, and test targets
 
@@ -10,9 +10,6 @@ stan: vendor ## Runs a static analysis with phpstan
 
 test: vendor ## Runs auto-review, unit, and integration tests with phpunit
 	vendor/bin/phpunit
-
-coverage: vendor ## Collects coverage from running unit tests with phpunit
-	vendor/bin/phpunit --coverage-text
 
 vendor: composer.json composer.lock
 	composer validate --strict

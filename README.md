@@ -1,11 +1,5 @@
 # phpunit-assert-directory
 
-[![CI Status](https://github.com/spawnia/phpunit-assert-directory/workflows/Continuous%20Integration/badge.svg)](https://github.com/spawnia/phpunit-assert-directory/actions)
-[![codecov](https://codecov.io/gh/spawnia/phpunit-assert-directory/branch/master/graph/badge.svg)](https://codecov.io/gh/spawnia/phpunit-assert-directory)
-[![StyleCI](https://github.styleci.io/repos/207894361/shield?branch=master)](https://github.styleci.io/repos/207894361)
-[![Latest Stable Version](https://poser.pugx.org/spawnia/phpunit-assert-directory/v/stable)](https://packagist.org/packages/spawnia/phpunit-assert-directory)
-[![Total Downloads](https://poser.pugx.org/spawnia/phpunit-assert-directory/downloads)](https://packagist.org/packages/spawnia/phpunit-assert-directory)
-
 PHPUnit extension with assert methods for directories
 
 ## Installation
