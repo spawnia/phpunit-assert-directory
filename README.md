@@ -4,7 +4,7 @@ PHPUnit extension with assert methods for directories
 
 ## Installation
 
-Install through composer
+Install through composer.
 
 ```bash
 composer require --dev spawnia/phpunit-assert-directory
@@ -15,16 +15,12 @@ composer require --dev spawnia/phpunit-assert-directory
 Use the trait `AssertDirectory` in your test method.
 
 ```diff
-<?php
-
-declare(strict_types=1);
-
 namespace Foo\Tests;
 
-use PHPUnit\Framework;
+use PHPUnit\Framework\TestCase;
 +use Spawnia\PHPUnitAssertFiles\AssertDirectory;
 
-class FooTest extends Framework\TestCase
+final class FooTest extends TestCase
 {
 +   use AssertDirectory;
 }
@@ -66,11 +62,11 @@ public static function assertDirectoryContains(string $expected, string $actual,
 
 ## Changelog
 
-Please have a look at [`CHANGELOG.md`](CHANGELOG.md).
+See [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Contributing
 
-Please have a look at [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
+See [`CONTRIBUTING.md`](.github/CONTRIBUTING.md).
 
 ## License
 
