@@ -24,7 +24,7 @@
     "phpstan/phpstan": "^1",
     "phpstan/phpstan-deprecation-rules": "^1",
     "phpstan/phpstan-strict-rules": "^1",
-    "phpunit/phpunit": "^8 || ^9 || ^10",
+    "phpunit/phpunit": "^9 || ^10",
     "thecodingmachine/phpstan-safe-rule": "^1"
   },
   "autoload": {
