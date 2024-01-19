@@ -20,8 +20,8 @@
     "thecodingmachine/safe": "^1.3.3 || ^2"
   },
   "require-dev": {
-    "mll-lab/php-cs-fixer-config": "^5",
     "localheinz/composer-normalize": "^2.5",
+    "mll-lab/php-cs-fixer-config": "^5",
     "phpstan/extension-installer": "^1",
     "phpstan/phpstan": "^1",
     "phpstan/phpstan-deprecation-rules": "^1",
@@ -40,9 +40,9 @@
   },
   "config": {
     "allow-plugins": {
+      "infection/extension-installer": false,
       "localheinz/composer-normalize": true,
-      "phpstan/extension-installer": true,
-      "infection/extension-installer": false
+      "phpstan/extension-installer": true
     },
     "preferred-install": "dist",
     "sort-packages": true
