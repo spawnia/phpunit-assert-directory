@@ -21,6 +21,7 @@
   },
   "require-dev": {
     "localheinz/composer-normalize": "^2.5",
+    "mll-lab/php-cs-fixer-config": "^4 || ^5",
     "phpstan/extension-installer": "^1",
     "phpstan/phpstan": "^1",
     "phpstan/phpstan-deprecation-rules": "^1",
@@ -40,8 +41,7 @@
   "config": {
     "allow-plugins": {
       "localheinz/composer-normalize": true,
-      "phpstan/extension-installer": true,
-      "infection/extension-installer": false
+      "phpstan/extension-installer": true
     },
     "preferred-install": "dist",
     "sort-packages": true

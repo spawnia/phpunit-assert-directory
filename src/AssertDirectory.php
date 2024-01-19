@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace Spawnia\PHPUnitAssertFiles;
 
@@ -15,7 +13,6 @@ trait AssertDirectory
      * @param string $expected Path to the expected directory
      * @param string $actual Path to the actual directory
      * @param string $message Optional error message in case of failure
-     * @return void
      *
      * @throws ExpectationFailedException
      */
@@ -34,7 +31,6 @@ trait AssertDirectory
      * @param string $expected Path to the expected directory
      * @param string $actual Path to the actual directory
      * @param string $message Optional error message in case of failure
-     * @return void
      *
      * @throws ExpectationFailedException
      */
@@ -53,10 +49,10 @@ trait AssertDirectory
         $directory = new \RecursiveDirectoryIterator($expected);
         $iterator = new \RecursiveIteratorIterator($directory);
 
-        /** @var \SplFileInfo $fileInfo */
         foreach ($iterator as $fileInfo) {
+            assert($fileInfo instanceof \SplFileInfo);
             $expectedPathname = $fileInfo->getPathname();
-            $actualPathname = $actual.explode($expected, $expectedPathname, 2)[1];
+            $actualPathname = $actual . explode($expected, $expectedPathname, 2)[1];
 
             if ($fileInfo->isDir()) {
                 Assert::assertDirectoryExists($actualPathname, $message);

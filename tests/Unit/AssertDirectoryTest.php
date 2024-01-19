@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 
 namespace Spawnia\PHPUnitAssertFiles\Tests\Unit;
 
@@ -48,19 +46,13 @@ class AssertDirectoryTest extends Framework\TestCase
 
     protected static function compareFixtureEquals(string $name): void
     {
-        $base = __DIR__.'/../fixtures/'.$name;
-        self::assertDirectoryEquals(
-            $base.'/expected',
-            $base.'/actual'
-        );
+        $base = __DIR__ . '/../fixtures/' . $name;
+        self::assertDirectoryEquals("{$base}/expected", "{$base}/actual");
     }
 
     protected static function compareFixtureContains(string $name): void
     {
-        $base = __DIR__.'/../fixtures/'.$name;
-        self::assertDirectoryContains(
-            $base.'/expected',
-            $base.'/actual'
-        );
+        $base = __DIR__ . '/../fixtures/' . $name;
+        self::assertDirectoryContains("{$base}/expected", "{$base}/actual");
     }
 }
