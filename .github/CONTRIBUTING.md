@@ -2,11 +2,11 @@
 
 We are using [GitHub Actions](https://github.com/features/actions) as a continuous integration system.
 
-For details, see [`workflows/continuous-integration.yml`](workflows/continuous-integration.yml).
+For details, see [`workflows`](workflows).
 
 ## Code Style
 
-The code style is automatically fixed through [StyleCI](https://styleci.io/).
+We are using [`friendsofphp/php-cs-fixer`](https://github.com/friendsofphp/php-cs-fixer) to automatically format the code.
 
 ## Static Code Analysis
 
