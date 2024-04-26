@@ -8,6 +8,12 @@ https://github.com/spawnia/phpunit-assert-directory/releases
 
 ## Unreleased
 
+## v2.2.0
+
+### Added
+
+- Support PHPUnit 11
+
 ## v2.1.0
 
 ### Added

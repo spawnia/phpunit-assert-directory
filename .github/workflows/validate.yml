@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
 
       - uses: shivammathur/setup-php@v2
         with:
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
 
       - uses: shivammathur/setup-php@v2
         with:
@@ -50,6 +50,7 @@ jobs:
           - "^8"
           - "^9"
           - "^10"
+          - "^11"
         composer:
           - name: lowest
             arg: "--prefer-lowest --prefer-stable"
@@ -58,19 +59,27 @@ jobs:
         exclude:
           - php-version: "7.3"
             phpunit-version: "^10"
+          - php-version: "7.3"
+            phpunit-version: "^11"
           - php-version: "7.4"
             phpunit-version: "^10"
+          - php-version: "7.4"
+            phpunit-version: "^11"
           - php-version: "8.0"
             phpunit-version: "^10"
+          - php-version: "8.0"
+            phpunit-version: "^11"
           - php-version: "8.1"
             phpunit-version: "^8"
+          - php-version: "8.1"
+            phpunit-version: "^11"
           - php-version: "8.2"
             phpunit-version: "^8"
           - php-version: "8.3"
             phpunit-version: "^8"
 
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
 
       - uses: shivammathur/setup-php@v2
         with:
