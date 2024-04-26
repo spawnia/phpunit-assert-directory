@@ -16,11 +16,11 @@
   },
   "require": {
     "php": "^7.3 || ^8",
-    "phpunit/phpunit": "^8 || ^9 || ^10",
+    "phpunit/phpunit": "^8 || ^9 || ^10 || ^11",
     "thecodingmachine/safe": "^1.3.3 || ^2"
   },
   "require-dev": {
-    "localheinz/composer-normalize": "^2.5",
+    "ergebnis/composer-normalize": "^2.5",
     "mll-lab/php-cs-fixer-config": "^4 || ^5",
     "phpstan/extension-installer": "^1",
     "phpstan/phpstan": "^1",
@@ -40,7 +40,7 @@
   },
   "config": {
     "allow-plugins": {
-      "localheinz/composer-normalize": true,
+      "ergebnis/composer-normalize": true,
       "phpstan/extension-installer": true
     },
     "preferred-install": "dist",
