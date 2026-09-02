@@ -52,7 +52,7 @@ trait AssertDirectory
         foreach ($iterator as $fileInfo) {
             assert($fileInfo instanceof \SplFileInfo);
             $expectedPathname = $fileInfo->getPathname();
-            $actualPathname = $actual . explode($expected, $expectedPathname, 2)[1];
+            $actualPathname = $actual . substr($expectedPathname, strlen($expected));
 
             if ($fileInfo->isDir()) {
                 Assert::assertDirectoryExists($actualPathname, $message);
