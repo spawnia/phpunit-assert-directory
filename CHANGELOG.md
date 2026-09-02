@@ -8,6 +8,12 @@ https://github.com/spawnia/phpunit-assert-directory/releases
 
 ## Unreleased
 
+## v2.2.1
+
+### Changed
+
+- Strip the expected directory prefix with `substr()` instead of `explode()` https://github.com/spawnia/phpunit-assert-directory/pull/6
+
 ## v2.2.0
 
 ### Added
